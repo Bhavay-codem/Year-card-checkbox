@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Year Checkbox</title>
+</head>
+
+<body class="light">
+  <center>
+    <div class="container my-5">
+      <div class="card">
+        <div class="card-header">
+          <strong>Year Checkbox</strong>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title mt-4 mb-6">Choose from the following year</h5>
+          <div class="form-check-inline mt-4 pe-5 mb-4">
+            <input class="form-check-input" data-bs-toggle="collapse" href="#year-one" role="button"
+              aria-expanded="false" aria-controls="year-one" type="checkbox" value="2021" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              2021
+            </label>
+          </div>
+          <div class="form-check-inline pe-5 mb-4">
+            <input class="form-check-input" data-bs-toggle="collapse" href="#year-two" role="button"
+              aria-expanded="false" aria-controls="year-two" type="checkbox" value="2022" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckChecked">
+              2022
+            </label>
+          </div>
+          <div class="form-check-inline mb-4">
+            <input class="form-check-input" data-bs-toggle="collapse" href="#year-third" role="button"
+              aria-expanded="false" aria-controls="year-third" type="checkbox" value="2023" id="flexCheckDefault">
+            <label class="form-check-label mb-6" for="flexCheckChecked">
+              2023
+            </label>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="year-one">
+                <div class="btn-group mt-4">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Month
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" href="#left-one" role="button"
+                        aria-expanded="false" aria-controls="one" href="#">January-April</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" href="#left-two" role="button"
+                        aria-expanded="false" aria-controls="two" href="#">May-August</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" href="#left-three" role="button"
+                        aria-expanded="false" aria-controls="three" href="#">Sepetember-Decemeber</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col">
+              <div class="collapse multi-collapse" id="year-two">
+                <div class="btn-group mt-4" data-bs-toggle="collap" href="#year-two" role="button" aria-expanded="false"
+                  aria-controls="year-two">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Month
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" href="#center-one" role="button"
+                        aria-expanded="false" aria-controls="one" href="#">January-April</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" href="#center-two" role="button"
+                        aria-expanded="false" aria-controls="two" href="#">May-August</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" href="#center-three" role="button"
+                        aria-expanded="false" aria-controls="three" href="#">Sepetember-Decemeber</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="collapse multi-collapse" id="year-third">
+                <div class="btn-group mt-4">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Month
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" href="#right-one" role="button"
+                        aria-expanded="false" aria-controls="one" href="#">January-April</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" href="#right-two" role="button"
+                        aria-expanded="false" aria-controls="two" href="#">May-August</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" href="#right-three" role="button"
+                        aria-expanded="false" aria-controls="three" href="#">Sepetember-Decemeber</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-cols-3">
+            <div class="col-12">
+              <form class="collapse" id="left-one">
+                <div class=" row justify-content-between mt-4">
+                  <div class="col-4 mt-3">
+                    <label>January 2021: </label> <input class="input-group-text number-one-one mb-3" type="number"placeholder="Enter value">
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    Febuary 2021: <input class="input-group-text number-one-one mb-3"  type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    March 2021: <input class="input-group-text number-one-one mb-3"  type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    April 2021: <input class="input-group-text number-one-one" type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+                <div class="row justify-content-between mt-3">
+                  <div class="col-4 mb-5">
+                    <button type="reset" class="btn btn-primary me-3">Reset</button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- 2 card year-2021 -->
+              <form class="collapse" id="left-two">
+                <div class="row justify-content-between mt-4">
+                  <div class="col-4">
+                    May 2021: <input class="input-group-text number-one-two mb-3" type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    June 2021: <input class=" input-group-text number-one-two mb-3" type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    July 2021: <input class="input-group-text number-one-two mb-3" type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    August 2021: <input class="input-group-text number-one-two mb-3"  type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+                <div class="row justify-content-between mt-3">
+                  <div class="col-4 mb-5">
+                    <button type="reset" class="btn btn-primary me-3">Reset</button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- 3 card year-2021 -->
+              <form class="collapse" id="left-three">
+                <div class="row justify-content-between mt-4">
+                  <div class="col-4">
+                    September 2021: <input class="input-group-text number-one-three mb-3"  type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    October 2021: <input class="input-group-text number-one-three mb-3" type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    November 2021: <input class="input-group-text number-one-three mb-3" type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    December 2021: <input class="input-group-text number-one-three" type="number"
+                      placeholder="Enter value">
+                  </div>
+                </div>
+                <div class="row justify-content-between">
+                  <div class="col-4 mt-3">
+                    <button type="reset" class="btn btn-primary me-3 mb-5">Reset</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-12">
+              <form class=" collapse" id="center-one">
+                <div class="col-4">
+                  January 2022: <input class="input-group-text number-two-one  mb-3"  type="number"
+                    placeholder="Enter value">
+                </div>
+
+                <div class="col-4">
+                  Febuary 2022: <input class="input-group-text number-two-one mb-3" type="number"
+                    placeholder="Enter value">
+                </div>
+
+                <div class="col-4">
+                  March 2022: <input class="input-group-text number-two-one mb-3" type="number"
+                    placeholder="Enter value">
+                </div>
+
+                <div class="col-4">
+                  April 2022: <input class="input-group-text number-two-one  mb-3"  type="number"
+                    placeholder="Enter value">
+                </div>
+                <div class="col-4 mt-3">
+                  <button type="reset" class="btn btn-primary me-3 mb-5">Reset</button>
+                </div>
+              </form>
+
+              <!-- 2 card year-2022 -->
+              <form class=" collapse two " id="center-two">
+                <div class="mt-5 col-4">
+                  May 2022: <input class="input-group-text number-two-two  mb-3" type="number"
+                    placeholder="Enter value">
+                </div>
+
+                <div class="col-4">
+                  June 2022: <input class="input-group-text number-two-two mb-3"  type="number"
+                    placeholder="Enter value">
+                </div>
+
+                <div class="col-4">
+                  July 2022: <input class="input-group-text number-two-two mb-3" type="number" placeholder="Enter value">
+                </div>
+
+                <div class="col-4">
+                  August 2022: <input class="input-group-text number-two-two mb-3" type="number"
+                    placeholder="Enter value">
+                </div>
+                <div class=" mt-3 col-4">
+                  <button type="reset" class="btn btn-primary me-3 mb-5">Reset</button>
+                </div>
+                </form>
+
+                <!-- 3 card year-2022 -->
+                <form class=" collapse three" id="center-three">
+                    <div class="mt-5 col-4">
+                      September 2022: <input class="input-group-text number-two-three mb-3" type="number"
+                        placeholder="Enter value">
+                    </div>
+      
+                    <div class="col-4">
+                      October 2022: <input class="input-group-text number-two-three mb-3"
+                        type="number" placeholder="Enter value">
+                    </div>
+      
+                    <div class="col-4">
+                      November 2022: <input class="input-group-text number-two-three mb-3"
+                        type="number" placeholder="Enter value">
+                    </div>
+      
+                    <div class="col-4">
+                      December 2022: <input class="input-group-text number-two-three mb-3" type="number"
+                        placeholder="Enter value">
+                    </div>
+                    <div class="input-data mt-4 mb-5">
+                      <button type="reset" class="btn btn-primary me-3 mb-5">Reset</button>
+                    </div>
+                  </form>
+            </div>       
+          </div>
+        </div>
+
+
+        <!-- year-2023 -->
+        <!--1 card year-2023 -->
+        <form class="collapse" id="right-one">
+          <div class="row row-cols-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+              January 2023: <input class="input-group-text number-three-one mb-3" type="number"placeholder="Enter value">
+            </div>
+          </div>
+
+          <div class="row row-cols-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+              Febuary 2023: <input class="input-group-text number-three-one mb-3" placeholder="Enter Value">
+            </div>
+          </div>
+
+          <div class="row row-cols-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+              March 2023: <input class="input-group-text number-three-one mb-3" placeholder="Enter Value">
+            </div>
+          </div>
+
+          <div class="row row-cols-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+              April 2023: <input class="input-group-text number-three-one mb-3" placeholder="Enter Value">
+            </div>
+          </div>
+          <div class="row row-cols-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col mt-2">
+              <button type="reset" class="btn btn-primary me-3 mb-5">Reset</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- 2 card year-2023 -->
+        <form class="collapse" id="right-two">
+          <div class="row row-cols-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col mt-5">
+              May 2023: <input class="input-group-text number-three-two mb-3" placeholder="Enter Value">
+            </div>
+          </div>
+
+          <div class="row row-cols-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+              June 2023: <input class="input-group-text number-three-two mb-3" placeholder="Enter Value">
+            </div>
+          </div>
+
+          <div class="row row-cols-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+              July 2023: <input class="input-group-text number-three-two mb-3" placeholder="Enter Value">
+            </div>
+          </div>
+
+          <div class="row row-cols-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col-4">
+              August 2023: <input class="input-group-text number-three-two mb-3" placeholder="Enter Value">
+            </div>
+          </div>
+          <div class="row row-cols-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col mt-2">
+              <button type="reset" class="btn btn-primary me-3 mb-5">Reset</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- 3 card year-2023 -->
+        <form class="collapse" id="right-three">
+          <div class="container">
+            <div class="row row-cols-3">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col mt-5">
+                September 2023: <input class="input-group-text number-three-three mb-3" placeholder="Enter Value">
+              </div>
+            </div>
+
+            <div class="row row-cols-3">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col">
+                October 2023: <input class="input-group-text number-three-three mb-3" placeholder="Enter Value">
+              </div>
+            </div>
+
+            <div class="row row-cols-3">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col">
+                November 2023: <input class="input-group-text number-three-three mb-3" placeholder="Enter Value">
+              </div>
+            </div>
+
+            <div class="row row-cols-3">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col">
+                December 2023: <input class="input-group-text number-three-three mb-3" placeholder="Enter Value">
+              </div>
+            </div>
+            <div class="row row-cols-3">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col mt-2">
+                <button type="reset" class="btn btn-primary me-3 mb-5">Reset</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+
+  </center>
+</body>
+
+</html>
